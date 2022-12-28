@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/css/main.88f07dbf.css",
-    "main.js": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/main.4618d00d.js",
+    "main.css": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/css/main.fa167e16.css",
+    "main.js": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/main.9ed98c8e.js",
     "static/js/556.4af6f568.chunk.js": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/556.4af6f568.chunk.js",
     "static/js/787.e740698a.chunk.js": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/787.e740698a.chunk.js",
     "static/media/mail.png": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/media/mail.091b20355558d17e3add.png",
     "static/media/logo3.png": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/media/logo3.b7eada928943102b328c.png",
     "static/media/fone2.png": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/media/fone2.043dad59882709977295.png",
     "index.html": "/CV_ANDRIAN_KORCHYNSKIY.github.io/index.html",
-    "main.88f07dbf.css.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/css/main.88f07dbf.css.map",
-    "main.4618d00d.js.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/main.4618d00d.js.map",
+    "main.fa167e16.css.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/css/main.fa167e16.css.map",
+    "main.9ed98c8e.js.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/main.9ed98c8e.js.map",
     "556.4af6f568.chunk.js.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/556.4af6f568.chunk.js.map",
     "787.e740698a.chunk.js.map": "/CV_ANDRIAN_KORCHYNSKIY.github.io/static/js/787.e740698a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88f07dbf.css",
-    "static/js/main.4618d00d.js"
+    "static/css/main.fa167e16.css",
+    "static/js/main.9ed98c8e.js"
   ]
 }
