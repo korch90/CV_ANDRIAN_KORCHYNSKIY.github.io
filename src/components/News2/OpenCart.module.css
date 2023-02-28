@@ -1,0 +1,77 @@
+.wrapper {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  background: #E5E5E5;
+  z-index: 100;
+  left: 10%;
+  top: 10%;
+  display: flex;
+}
+
+.headerImg {
+  width: 100%;
+  height: 250px;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.main {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background: #FFFFFF;
+  align-items: center;
+  padding: 15px;
+  row-gap: 30px;
+  text-align: center;
+}
+
+.backWrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 24px;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363636;
+  justify-content: space-between;
+}
+
+.description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #363636;
+}
+
+.back>a {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+}
+
+.backIMG {
+  background-image: url(../../image/arr2.png);
+  width: 32px;
+  height: 10px;
+  color: #130F26;
+  margin-left: 5px;
+
+  background-position: center;
+background-size: 100%;
+
+}

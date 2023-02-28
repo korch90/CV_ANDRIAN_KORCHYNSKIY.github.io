@@ -33,24 +33,22 @@ const News = () => {
     })
 
 
+    const newsUrl="https://newsapi.org/v2/everything?q=tesla&from=2022-12-11&sortBy=publishedAt&apiKey=94ecac4d82874e44a171d09756f3b460"
 
     useEffect(() => {
       const options = {
         method: 'GET',
-        url: 'https://bing-news-search1.p.rapidapi.com/news/trendingtopics',
-        params: {textFormat: 'Raw', safeSearch: 'Off'},
-        headers: {
-          'X-BingApis-SDK': 'true',
-          'X-RapidAPI-Key': 'da8a8db973mshbdcb549202eaa4dp163864jsne9ad78339bc8',
-          'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
-        }
+        url: newsUrl,
+  
       };
 
       axios.request(options)
         .then(function (response) {
-          setPreviousNewsData(response.data.value)
-          setNewsData(response.data.value)
-           console.log(response.data.value[0])
+          setPreviousNewsData(response.data.articles)
+          setNewsData(response.data.articles)
+          console.log(response.data.articles[0])
+        
+       
           if (errorRef.current) {
             errorRef.current.classList.remove(`${s.errorHidden}`)
             errorRef.current.classList.add(`${s.errorHidden}`)
@@ -130,14 +128,14 @@ return(
 
 <div  ref={errorRef} className={s.errorHidden} >internet problem...</div>
 
-  <ul> 
+<ul> 
     {newsData.filter((el,index)=>index<newItemsSectionShow).map(el =><li   key={el.name} > 
 
     
    <div className={ s.hiddenItem}   >
    <div className={s.title} >{el.name}</div> 
    <br />
-   <div> {el.description}</div>
+   <div> {el.title}</div>
    <br />
 
    {/* <Link to={el.link}>{el.link}</Link> */}
@@ -146,11 +144,11 @@ return(
    <br />
    <div> {el.time}</div>
    <br />
-   <div> {el.query.text}</div>
+   <div> {el.title}</div>
    <br />
    <a target="_blank" href={el.link} >{el.link}</a>
    <br />
-   <img  src= {el.image.url} className={s.imgNewsItemActive} alt={el.image.url}/>
+   <img  src= {el.urlToImage} className={s.imgNewsItemActive} alt={el.urlToImage}/>
 <a onClick={(e)=>seeMoreInNewsItems(e)}  href="#" >close</a>
 
 
@@ -158,18 +156,22 @@ return(
 
     <div className={s.title} >{el.name}</div> 
     <br/>
-    {el.query.text} <br/>
+    {el.title} <br/>
 
 
 <a onClick={(e)=>seeMoreInNewsItems(e)}  href="" >see more...</a>
- <img className={s.imgNewsItem}  src= {el.image.url}alt={el.image.url} />
+ <img className={s.imgNewsItem}  src= {el.urlToImage}alt={el.urlToImage} />
  
      </li>
      )}
     </ul>
+
+
     </div> 
 )
 }
 
 
 export default News
+
+// 94ecac4d82874e44a171d09756f3b460

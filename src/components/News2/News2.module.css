@@ -1,0 +1,262 @@
+.openCart {
+  /* position: absolute; */
+  width: 90%;
+  height: 90vh;
+  top: 0;
+}
+
+.wrapper {
+
+  width: 100vw;
+  height: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+  background-color: rgb(122, 193, 42);
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.wrapper>ul {
+  list-style-type: none;
+  width: 100vw;
+  height: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+.wrapper>ul>li {
+  width: 400px;
+  height: 530px;
+  padding: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  margin: 2px;
+
+  flex-direction: column;
+  align-items: baseline;
+
+  background-color: #fff;
+  margin-bottom: 20px;
+
+
+}
+
+.aftertImg {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: space-between;
+  height: 280px;
+  padding-top: 10px;
+}
+
+.searchInputContainer {
+  min-width: 600px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+}
+
+.results {
+  min-width: 600px;
+  height: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #363636;
+  margin-top: 30px;
+}
+
+.searchInput {
+  margin-left: 10px;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #575757;
+  width: 90%;
+}
+
+.searchInput:focus-visible {
+  border: none;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.searchInputContainerImg {
+  background-image: url(../../image/Vector.png);
+  width: 20px;
+  height: 20px;
+
+}
+
+.title {
+
+  width: 350px;
+  height: 58px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  overflow: hidden;
+  color: #363636;
+}
+
+.hiddenBlockNews {
+  display: none;
+
+}
+
+.imgNewsItem {
+  width: 400px;
+  height: 217px;
+}
+
+.imgNewsItemActive {
+  width: 70vw;
+  min-height: 50vh;
+}
+
+.calendar {
+  background-image: url(../../image//Group.png);
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.activeItemDarkTheme {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: -60px;
+  left: 5%;
+  margin: 0 auto;
+  width: 90vw;
+  min-height: 80vh;
+  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  /* top:-60px;  */
+  left: 5%;
+  margin: 0 auto;
+  width: 90vw;
+  min-height: 80vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+
+
+}
+
+.hiddenItem {
+  display: none;
+  background-color: rgb(98, 28, 28);
+
+  /* or 24px */
+
+
+  color: #363636;
+
+}
+
+.readMore {
+  display: flex;
+  align-items: center;
+  width: 112px;
+  height: 24px;
+  position: relative;
+font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363636;
+}
+
+.readMore>a {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+}
+
+.readMoreIMG {
+  background-image: url(../../image/arr2.png);
+  width: 32px;
+  height: 10px;
+  color: #130F26;
+  margin-left: 5px;
+background-position: center;
+background-size: 100%;
+  transform: rotate(180deg);
+
+}
+
+.description {
+  width: 350px;
+  height: 96px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  overflow: hidden;
+}
+
+.errorShow {
+  display: none;
+  padding-top: 30px;
+}
+
+.errorHidden {
+  visibility: hidden;
+  /* padding-top: 30px; */
+}
+
+.timeWrapper {
+  display: flex;
+}
+
+.news_light {
+  background-color: rgb(250, 248, 248);
+  color: black;
+}
+
+.news_dark {
+  background: rgb(8, 8, 8);
+  color: white;
+}
