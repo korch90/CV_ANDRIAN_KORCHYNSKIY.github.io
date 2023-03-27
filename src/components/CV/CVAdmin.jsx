@@ -25,6 +25,7 @@ const [state, setState]=useState({
     hobbies:[false,false,false,false,false], language:false })
 
 
+//nn
 
 const [editValue, setEditValue]=useState({text:""})
 const [isTheSameElement, setIsTheSameElement]=useState('')
